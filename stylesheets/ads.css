@@ -149,15 +149,43 @@ a {
     cursor: pointer;
 }
 .container {
-        width: 960px;
-        margin: 0 auto;
-        position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.container-2 {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
 }
 header {
-    position: relative;
+    position: absolute;
     z-index: 95;
+    width: 100%;
 }
-
+.brand-logo {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    float: left;
+    position: relative;
+}
+.menu {
+    float : right;
+    width: 65%;
+    background-color: yellow;
+}
+.menu ul {
+    float: right;
+}
+.menu ul li {
+    list-style: none;
+    float: left;
+    margin: 5px 20px;
+}
+.menu ul li a {
+    padding: 5px;
+}
 section {
     float: left;
     position: relative;
@@ -169,10 +197,63 @@ section > div {
     position: relative;
     float: left;
     width: 100%;
-    min-height: 200px;
+    min-height: 250px;
     height: auto;
 }
-
+.home {
+    min-height: 500px;
+}
+/*.what-we-do {
+    min-height: 400px;
+}*/
+.article {
+    width: 22%;
+    margin: 20px 1.5% 30px;
+}
+.feature-logo {
+    margin-left: 25%;
+    width: 50%;
+    height: 100px;
+    background-image: url(../images/icons/features.png);
+}
+.feature-1 {
+    background-position: 4px 0;
+}
+.feature-2 {
+    background-position: -94px 0;
+}
+.feature-3 {
+    background-position: -194px 0;
+}
+.feature-4 {
+    background-position: -294px 0;
+}
+.article h2 {
+    margin: 0px auto;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    color: #101010;
+    display: inline-block;
+    font-weight: 700;
+    line-height: normal;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.article p {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    color: #7d7d7d;
+    display: block;
+    font-size: 14px;
+    padding: 5px;
+    line-height: normal;
+    vertical-align: middle;
+    text-align: center;
+}
 .contact-form {
     width: 485px;
     margin: 0 auto;
