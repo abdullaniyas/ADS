@@ -5,7 +5,21 @@
    $('.home-banner').css({
       'top' : +($(this).scrollTop()/1.5)+"px"
    }); 
-    
+   
+   var headerHeight = $('.menu').height();
+    var height = $(window).scrollTop() + 150;
+    var screenHeight = $( window ).height();
+    if(height  > screenHeight) {
+       // alert('done it');
+       $(".header-menu").addClass("header-color");
+       $(".brand-logo").addClass("brand-logo-anime");
+//       $('.brand-logo-anime').css({
+//            'height' : headerHeight + "px"
+//        });
+    } else if ( height  < screenHeight ){
+        $(".header-menu").removeClass("header-color");
+        $(".brand-logo").removeClass("brand-logo-anime");
+    }
 });
 
 $(document).ready(function () {
@@ -17,11 +31,15 @@ $(document).ready(function () {
     $('.home-banner, .home').css({
         'height' : screenHeight + "px"
     });
+    
+    
+    
+    
     /* Menu Item Slide */
     
     $(function(){
         $.scrollIt({
-            topOffset: -30
+            topOffset: -62
         });
     });
 
@@ -73,14 +91,6 @@ $(document).ready(function () {
         $('.' + panel_to_show).show();
     });
 
-    /* Pagination */
-    
-    $('#paging_container3').pajinate({
-        items_per_page : 6,
-        item_container_id : '.alt_content',
-        nav_panel_id : '.alt_page_navigation'
-					
-    });
     /* Function for photography pop up and slide */
     //	Add a custom filter to recognize images from lorempixel (that don't end with ".jpg" or something similar)
 //    $.tosrus.defaults.media.image = {
@@ -89,17 +99,6 @@ $(document).ready(function () {
 //        }
 //    };
 
-    $('#example-1 a').tosrus({
-        buttons: 'inline',
-        pagination	: {
-            add			: true,
-            type		: 'thumbnails'
-        }
-    });
-    
-    
-    /* Skills Indicator in percentage */
-    $('.myStat').circliful();
 
     //google.maps.event.addDomListener(window, 'load', initialize);
     /* Initialize Google maps */
