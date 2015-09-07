@@ -6,6 +6,7 @@ body {
 .hide {
         display: none;
 }
+.white { background-color: white; }
 .red { background-color: red; }
 .blue { background-color: blue; }
 .green { background-color: green; }
@@ -173,7 +174,6 @@ header {
 .menu {
     float : right;
     width: 65%;
-    background-color: yellow;
 }
 .menu ul {
     float: right;
@@ -185,6 +185,13 @@ header {
 }
 .menu ul li a {
     padding: 5px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.menu ul li a:hover {
+    color: #8EA0B2;
 }
 section {
     float: left;
@@ -200,8 +207,32 @@ section > div {
     min-height: 250px;
     height: auto;
 }
+.home-banner {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 600px;
+    background-image: url(../images/back.jpg);
+    background-position: 0 -100px;
+    //background-attachment: fixed;
+    background-size: 100% auto;
+}
 .home {
-    min-height: 500px;
+    min-height: 600px;
+    background-color: rgba(17, 21, 15, 0.6);
+}
+.home-more {
+    height: 30px;
+    width: 50px;
+    background-color: red;
+    margin: -80px auto 50px;
+    background-image: url(../images/icons/more.png);
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+/*    text-align: center;
+    display: inline-block;*/
 }
 /*.what-we-do {
     min-height: 400px;

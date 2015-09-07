@@ -1,6 +1,22 @@
+ 
+ 
+ $(window).scroll(function () { 
+    //alert('hello');
+   $('.home-banner').css({
+      'top' : +($(this).scrollTop()/1.5)+"px"
+   }); 
+    
+});
 
 $(document).ready(function () {
 
+
+
+    var screenHeight = $( window ).height();
+    //alert (screenHeight);
+    $('.home-banner, .home').css({
+        'height' : screenHeight + "px"
+    });
     /* Menu Item Slide */
     
     $(function(){
