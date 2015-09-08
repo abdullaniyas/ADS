@@ -201,6 +201,15 @@ header {
     width: 100px;
     height: 66px;
 }
+.mobile-menu {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background-color: #FFAE00;
+    //display: none;
+}
 .menu {
     float : right;
     width: 65%;
@@ -556,4 +565,119 @@ footer p {
     color: #2a2a2a;
     margin: 15px auto;
     font-size: 14px;
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 100%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .container-2 {
+        width: 100%;
+    }
+    .menu {
+        width: 75%;
+    }
+}
+@media screen and (max-width:900px) {
+    .brand-logo {
+        margin-left: 5%;
+    }
+    .brand-logo-anime {
+        width: 100px;
+        height: 62px;
+    }
+    .menu {
+        width: 75%;
+        margin-right: 5%;
+    }
+    .menu ul li a {
+        padding: 5px 3px;
+    }
+    .menu ul li {
+        margin: 5px 13px;
+    }
+    .heading h1 {
+        text-align: center;
+        text-decoration: underline;
+    }
+    .article {
+        width: 40%;
+        margin: 20px 5% 30px;
+    }
+    .feature-logo {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        background-image: url(../images/icons/features.png);
+    }
+    .works-image {
+        width: 100%;
+        margin: 0;
+    }
+    .works-content {
+        width: 90%;
+        margin: 20px 5%;
+    }
+    .team {
+        width: 40%;
+        margin: 50px auto 50px 5%;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .contact-map {
+        height: 500px;
+        width: 100%;
+    }
+    .styled fieldset ol {
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (max-width:800px) {
+    .menu ul li a {
+        padding: 4px 1px;
+    }
+    .menu ul li {
+        margin: 3px 8px;
+    }
+}
+@media screen and (max-width:700px) {
+    .menu {
+        width: 75%;
+    }
+}
+@media screen and (max-width:580px) {
+    .team {
+        width: 66%;
+        margin: 40px 17%;
+    }
+    .contact-map {
+        height: 400px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .article {
+        width: 90%;
+        margin: 20px 5% 30px;
+    }
+    .contact-map {
+        height: 350px;
+    }
+    
+}
+@media screen and (max-width:380px) {
+    .team {
+        width: 80%; 
+        margin: 40px auto 40px 10%;
+    }
+    .contact-map {
+        height:280px;
+    }
 }
